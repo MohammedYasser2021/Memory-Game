@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <div class="control-btns">
+      <span>Start Game</span>
+    </div>
+    <div class="info-container">
+      <div class="name">Hello <span></span></div>
+      <div class="time">Time: <span></span></div>
+      <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+    <div class="memory-game-blocks">
+      <div class="game-block" data-custom="user">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-user-circle-o"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="user">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-user-circle-o"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="university">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-university"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="university">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-university"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="car">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-car"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="car">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-car"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="bicycle">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-bicycle"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="bicycle">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-bicycle"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="camera">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-camera"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="camera">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-camera"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="bus">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-bus"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="bus">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-bus"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="desktop">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-desktop"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="desktop">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-desktop"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="cube">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-cube"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="cube">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-cube"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="diamond">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-diamond"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="diamond">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-diamond"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="gift">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-gift"></i>
+        </div>
+      </div>
+      <div class="game-block" data-custom="gift">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa fa-gift"></i>
+        </div>
+      </div>
+    </div>
+    <audio
+      id="background"
+      src="audio/Warm-Memories-Emotional-Inspiring-Piano.mp3"
+      preload="auto"
+      loop
+    ></audio>
+    <audio id="win" src="audio/win.wav" preload="auto"></audio>
+    <audio id="lose" src="audio/lose.wav" preload="auto"></audio>
+    <audio id="defeat" src="audio/sfx-defeat1.mp3" preload="auto"></audio>
+    <audio
+      id="suc"
+      src="audio/[MP3DOWNLOAD.TO] Success - Sound Effect HD (No Copyright Sound)-320k.mp3"
+      preload="auto"
+    ></audio>
+
+    <div class="game-over">
+      <div class="game-over-content">
+        <h1>Game Over</h1>
+        <button>Plat Again</button>
+      </div>
+    </div>
+    <div class="successful">
+      <div class="successful-content">
+        <h1>Congratulations !!</h1>
+        <button>Plat Again</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
